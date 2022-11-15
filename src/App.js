@@ -9,6 +9,17 @@ const App = () => {
     let updatedBoard = [...squares]
     updatedBoard[index] = "X"
     setSquares(updatedBoard)
+
+    if(squares[chooseSquare] !== ""){
+      alert ("choose another box")
+    } else if (player==="X"){
+      squares [chooseSquare] = "X"
+      setPlayer("O")
+    } else if (player==="O") {
+      squares [chooseSquare] = "O"
+      setPlayer("X")
+    }
+
   }
   return (
     <>
